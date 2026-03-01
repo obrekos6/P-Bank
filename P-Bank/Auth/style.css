@@ -1,0 +1,91 @@
+:root {
+    --accent: #9013FE;
+    --grad: linear-gradient(135deg, #4A90E2 0%, #9013FE 100%);
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #ffffff; /* Полностью белый фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 340px;
+    padding: 40px;
+    text-align: center;
+    /* Убрал жирные тени, оставил легкую рамку для стиля */
+    border: 1px solid #f0f0f0;
+    border-radius: 24px;
+    background: #fff;
+}
+
+.auth-logo {
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 18px 18px 4px 18px; /* Твой уникальный стиль */
+}
+
+h2 { margin-bottom: 30px; font-weight: 800; color: #000; }
+
+.input-group { margin-bottom: 15px; position: relative; }
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+input:focus { border-color: var(--accent); outline: none; }
+
+.eye-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    border: none;
+    background: var(--grad);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.toggle-box { margin-top: 20px; font-size: 14px; color: #666; }
+.link { color: #4A90E2; font-weight: 600; cursor: pointer; margin-left: 5px; }
+
+.back-home { margin-top: 25px; padding-top: 20px; border-top: 1px solid #f9f9f9; }
+.back-link { 
+    text-decoration: none; 
+    color: #aaa; 
+    font-size: 13px; 
+    font-weight: 500; 
+    transition: 0.2s;
+}
+.back-link:hover { color: var(--accent); }
+
+.error-msg { color: #ff4d4d; font-size: 12px; min-height: 15px; margin-bottom: 10px; }

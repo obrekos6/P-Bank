@@ -1,0 +1,53 @@
+:root {
+    --accent: #9013FE;
+    --card-grad: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+}
+
+body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #fcfcfc; color: #333; }
+.container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+/* Шапка */
+.header { background: #fff; border-bottom: 1px solid #f0f0f0; padding: 10px 0; }
+.header-content { display: flex; justify-content: space-between; align-items: center; }
+.logo-img { height: 40px; border-radius: 12px 12px 4px 12px; cursor: pointer; }
+.user-profile { display: flex; align-items: center; gap: 15px; font-weight: 600; }
+.btn-logout { background: none; border: none; color: #ff4d4d; cursor: pointer; font-weight: 600; }
+
+/* Контент */
+.main-content { padding: 40px 0; }
+.welcome-section h1 { font-size: 32px; margin: 0; font-weight: 800; }
+.date-now { color: #aaa; margin: 5px 0 30px; font-size: 14px; }
+
+.dashboard-grid { display: grid; grid-template-columns: 400px 1fr; gap: 40px; }
+
+/* Дизайн Карты */
+.bank-card {
+    width: 400px; height: 240px;
+    background: var(--card-grad);
+    border-radius: 24px;
+    padding: 30px;
+    box-sizing: border-box;
+    color: white;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.card-top { display: flex; justify-content: space-between; align-items: center; }
+.card-type { font-size: 12px; opacity: 0.6; text-transform: uppercase; letter-spacing: 1px; }
+.card-p { font-size: 28px; font-weight: 900; background: linear-gradient(to bottom, #fff, #999); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+.card-chip { width: 50px; height: 38px; background: linear-gradient(135deg, #d4af37, #f9e27d); border-radius: 8px; margin: 25px 0; }
+
+.card-balance { font-size: 34px; font-weight: 700; margin-bottom: 30px; }
+.card-balance small { font-size: 18px; opacity: 0.7; }
+.card-holder { font-family: monospace; font-size: 18px; letter-spacing: 2px; opacity: 0.9; }
+
+/* Действия */
+.actions-panel { background: white; padding: 30px; border-radius: 24px; border: 1px solid #f0f0f0; }
+.action-btn {
+    width: 100%; padding: 18px; border: none; border-radius: 16px;
+    background: #f5f5f5; color: #000; font-size: 16px; font-weight: 600;
+    cursor: pointer; transition: 0.2s; text-align: left; display: flex; align-items: center; gap: 15px;
+}
+.action-btn:hover { background: #eee; transform: translateY(-2px); }
+.info-text { margin-top: 20px; color: #ccc; font-size: 13px; font-style: italic; }

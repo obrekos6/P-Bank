@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>П-Банк — Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- ПОДКЛЮЧЕНИЕ SUPABASE -->
+    <!-- Supabase JS (official CDN). Copy supabase-config.example.js -> supabase-config.js and fill values -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/supabase.min.js"></script>
+    <script src="supabase-config.js"></script>
+</head>
+<body>
+
+<header class="container header">
+    <div class="header-left">
+        <img src="../logo.png" alt="П-Банк" class="logo-img" onclick="location.href='index.html'">
+        <div class="nav-item">
+            Еще ▾ 
+            <div class="dropdown" id="extra-dropdown"></div>
+        </div>
+    </div>
+
+    <div class="nav-item" id="account-menu">
+        Личный кабинет ▾
+        <div class="dropdown" id="account-dropdown"></div>
+    </div>
+</header>
+
+<main class="container hero">
+    <h1 class="title-main">Самый лучший и безопасный банк</h1>
+    <p class="title-sub">По крайней мере в СП-Союзе</p>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

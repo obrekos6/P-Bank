@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет — П-Банк</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- ПОДКЛЮЧЕНИЕ SUPABASE -->
+    <script src="https://cdn.jsdelivr.net"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <img src="../logo.png" alt="П-Банк" class="logo-img" onclick="location.href='../MainPage/index.html'">
+            <div class="user-profile">
+                <span id="nav-username">Загрузка...</span>
+                <button onclick="logout()" class="btn-logout">Выход</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <section class="welcome-section">
+            <h1>Здравствуйте, <span id="welcome-name">Гость</span></h1>
+            <p class="date-now" id="current-date"></p>
+        </section>
+
+        <div class="dashboard-grid">
+            <div class="bank-card">
+                <div class="card-top">
+                    <span class="card-type">Дебетовая</span>
+                    <span class="card-p">P</span>
+                </div>
+                <div class="card-chip"></div>
+                <div class="card-balance">
+                    <span id="balance-amount">0</span> <small>П-₽</small>
+                </div>
+                <div class="card-holder" id="card-holder-name">IVAN IVANOV</div>
+            </div>
+
+            <div class="actions-panel">
+                <h3>Быстрые действия</h3>
+                <button class="action-btn" onclick="openTransfer()">
+                    <span class="icon">💸</span> Перевести П-рубли
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель управления — П-Банк</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- ПОДКЛЮЧЕНИЕ SUPABASE -->
+    <script src="https://cdn.jsdelivr.net"></script>
+</head>
+<body>
+    <div class="admin-container">
+        <header class="admin-header">
+            <div class="header-info">
+                <img src="../logo.png" alt="Logo" class="admin-logo">
+                <h1>Управление П-Банком 🛠</h1>
+            </div>
+            <a href="../MainPage/index.html" class="btn-exit">На главную</a>
+        </header>
+
+        <div class="table-wrapper">
+            <table id="users-table">
+                <thead>
+                    <tr>
+                        <th>Пользователь</th>
+                        <th>Текущий баланс</th>
+                        <th>Новое значение</th>
+                        <th>Действие</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

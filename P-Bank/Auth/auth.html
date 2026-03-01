@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход — П-Банк</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="auth-wrapper">
+        <div class="auth-card">
+            <img src="../logo.png" alt="П-Банк" class="auth-logo">
+            <h2 id="auth-title">Вход в П-Банк</h2>
+            <div id="error-msg" class="error-msg" style="color: red; margin-bottom: 10px; font-size: 14px;"></div>
+
+            <form id="auth-form">
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="Логин" required>
+                </div>
+                <div class="input-group pass-wrapper" style="position: relative;">
+                    <input type="password" id="password" placeholder="Пароль" required style="width: 100%; padding-right: 40px; box-sizing: border-box;">
+                    <img src="show.png" id="toggle-pass-img" class="eye-icon" alt="Показать" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); width: 20px; cursor: pointer; opacity: 0.5;">
+                </div>
+                <button type="submit" class="btn-submit" id="submit-btn" style="margin-top: 15px; width: 100%; padding: 12px; cursor: pointer;">Войти</button>
+            </form>
+
+            <div class="toggle-box" style="margin-top: 15px; font-size: 14px; text-align: center;">
+                <span id="toggle-text">Нет аккаунта?</span>
+                <span id="toggle-link" class="link" style="color: #4A90E2; cursor: pointer; font-weight: bold; margin-left: 5px;">Зарегистрироваться</span>
+            </div>
+
+            <div class="back-home" style="margin-top: 20px; text-align: center;">
+                <a href="../MainPage/index.html" style="text-decoration: none; color: #aaa; font-size: 12px;">Вернуться на главную</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ВСТРОЕННАЯ БИБЛИОТЕКА SUPABASE (ДЛЯ РАБОТЫ БЕЗ ОШИБОК) -->
+    <!-- Supabase JS (official CDN) -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/supabase.min.js"></script>
+    
+    <!-- ВАШ СКРИПТ (Загружается после библиотеки) -->
+    <script src="script.js"></script>
+</body>
+</html>
